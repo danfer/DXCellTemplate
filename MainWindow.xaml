@@ -12,11 +12,12 @@
     </Window.DataContext>
 
     <dxg:GridControl ItemsSource="{Binding Source}">
-        <dxg:GridColumn FieldName="Country"/>
+        <dxg:GridColumn FieldName="Country" />
+        <dxg:GridColumn FieldName="Comments" />
         <dxg:GridColumn FieldName="City">
             <dxg:GridColumn.CellTemplate>
                 <DataTemplate>
-                    <dxe:ListBoxEdit x:Name="PART_Editor" ItemsSource="{Binding RowData.Row.Cities}"/>
+                    <dxe:ListBoxEdit x:Name="PART_Editor" ItemsSource="{Binding RowData.Row.Cities}" />
                 </DataTemplate>
             </dxg:GridColumn.CellTemplate>
         </dxg:GridColumn>
